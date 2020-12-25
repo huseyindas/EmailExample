@@ -73,12 +73,19 @@ class RegisterController extends Controller
 
         $to_name='Antep Bootcamp';
         $to_email = $data['email'];
+        $name = $data['name'];
         $body = [];
-        $mail_data = array(['body'=>$body]);
+        $mail_data = array(['body'=>$body],'name'=>$name);
+
         Mail::send('email.register-email',$mail_data,function($msg) use ($to_name,$to_email){
             $msg->to($to_email,$to_name)->subject('Welcome');
             $msg->from(env('MAIL_USERNAME'),'Laravel Test Maili');
         });
+
         return $user;
+    }
+
+    public function index() {
+        return view("email.register-email");
     }
 }

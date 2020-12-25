@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e95caa9c-4237-44b6-b0ba-d056edd6ffb0" name="Default Changelist" comment="" />
+    <list default="true" id="e95caa9c-4237-44b6-b0ba-d056edd6ffb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Helpers/UploadPaths.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin-master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/register-email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/register-email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,9 +151,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/email-example" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\merc\www\Email-Example\app\Helpers" />
+      <recent name="C:\Users\merc\www\Email-Example\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -165,6 +180,9 @@
       <workItem from="1608393810269" duration="2292000" />
       <workItem from="1608405784615" duration="717000" />
       <workItem from="1608407363442" duration="426000" />
+      <workItem from="1608449897186" duration="9070000" />
+      <workItem from="1608837761512" duration="1473000" />
+      <workItem from="1608896965659" duration="4028000" />
     </task>
     <servers />
   </component>
