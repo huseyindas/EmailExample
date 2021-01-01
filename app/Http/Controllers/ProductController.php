@@ -6,6 +6,7 @@ use App\Helpers\UploadPaths;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -14,10 +15,11 @@ class ProductController extends Controller
     }
 
     public function save(Request $request) {
+
         $productName = $request->get("product_name");
         $productPrice = $request->get("product_price");
         $fileUrl = $request->file("product_photo");
-        $createdBY = User::find(1); //current user kimse onun id si gelmeli  ***ödev***
+        $createdBY = Auth::id(); //current user kimse onun id si gelmeli  ***ödev*** +++
 
         if (isset($fileUrl)) {
             $productPhotoName = uniqid("product_").".".$fileUrl->getClientOriginalExtension();  //product_56543456543, product_dklm23km23k

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Products extends Migration
+class AddRoleColumnToUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class Products extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
-            $table->increments("id");
-            $table->string("name");
-            $table->decimal("price" ,5,2);
-            $table->string("photo");
-            $table->timestamps();
-    });
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('role')->nullable()->after('email');
+        });
     }
 
     /**
@@ -29,7 +25,8 @@ class Products extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists("products");
+        Schema::table('users', function (Blueprint $table) {
+            Schema::dropIfExists('users');
+        });
     }
-
 }
